@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           
+            flex-direction: column;
+            
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        fieldset{
+            margin-bottom: 20px;
+            padding: 10px;
+           
+            border: 2px solid orange;
+            border-radius: 5px;
+            width: 600px;
+            
+        }
+        legend{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        tr td{
+            padding-right: 100px;
+        }
+     td input,select,textarea{
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Zoo Keeper Application Form</h1>
+    <i>please comlete the form. Mandatory fields are marked with a</i> <b style="color: red;">*</b>
+    </div>
+    <fieldset>
+        <legend>
+            <b>Contact Details</b> </legend>
+            <table>
+                <tr>
+                    <td><label for="">Name <b style="color: red;">*</b></label></td>
+                    <td><input type="text" placeholder="Name">   </td>
+                </tr>
+                <tr>
+                    <td><label for="">Telephone</label></td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="">Email <b style="color: red;">*</b></label></td>
+                    <td><input type="email" placeholder="Email">   </td>
+                </tr>
+            </table>
+       
+    </fieldset>
+    <fieldset class="one">
+        <legend><b>Personal Informaton</b></legend>
+        <table>
+            <tr>
+                <td><b style="color: red;">*</b><label for="">Age</label></td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td><select name="" id="">
+                    <option value="">Male</option>
+                    <option value="">Female</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>When did you <br>first know you <br>wanted to be a <br> zoo keeper?</td>
+                <td><textarea name="" id="" cols="30" rows="10" style="overflow-y: scroll;"></textarea></td>
+            </tr>
+        </table>
+    </fieldset>
+    <fieldset class>
+        <legend><b>Pick your Favourite Animals</b></legend>
+        <input type="checkbox" name="" id="">Lions
+        <input type="checkbox" name="" id="">Tigers 
+        <input type="checkbox" name="" id="">Bears
+        <input type="checkbox" name="" id="">Monkeys <br>
+        <input type="checkbox" name="" id="">Elephants
+        <input type="checkbox" name="" id="">Giraffes
+        <input type="checkbox" name="" id="">Zebras
+        <input type="checkbox" name="" id="">Pandas
+    </fieldset>
+    <input type="button" value="Submit Application">
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/302/810/small_2x/beautiful-forest-panoramic-realistic-wanderlust-background-landscape-dark-trees-pine-in-mist-design-mystery-fog-in-park-concept-nature-beauty-tourism-web-banner-free-vector.jpg);
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+        }
+        #top{
+             margin-top: 20px;
+             margin-left: 1270px;
+
+        }
+        .top-content{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        #top a{
+            font-family: sans-serif;
+        }
+        .top-content:hover{
+            text-decoration: underline;
+
+        }
+        #center input{
+                width: 750px;
+                height: 40px;
+                border-radius: 20px;
+                padding-left: 40px;
+                
+              
+        }
+        #center h1{
+            
+                color: white;
+                font-size: 2cm;
+                margin-bottom: 30px;
+                font-family: sans-serif;
+                
+        }
+        #center{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: 160px;
+           input{
+            margin-top: 0;
+           }
+           .search-icon{
+            font-size: 20px;
+            position: absolute;
+            top: 180px;
+            left: 375px;
+           }
+           .mic-icon{
+            font-size: 20px;
+            position: absolute;
+            top: 180px;
+            right: 410px;
+           }
+           .camera-icon{
+            font-size: 20px;
+            position: absolute;
+            top: 180px;
+            right:380px;
+           }
+        }
+       #bgshort{ 
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border-radius: 10px;
+            background-color: transparent;
+            backdrop-filter: blur(50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+        #shortcut{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: goldenrod;
+           
+            .plus{
+                font-size: 35px;
+                margin-top: 12px;
+                margin-left: 8px;
+            }
+
+        }
+        }
+        #bottom {
+            #lipara{
+            position: absolute;
+            bottom: 0px;
+            }
+            #pen{
+                 position: absolute;
+            bottom: 0px;
+            right: 10px;
+            }
+
+        }
+
+        
+
+
+
+
+    </style>
+</head>
+<body>
+    <div id="top">
+            <a href="" class="top-content">Google</a>
+            <a href="" class="top-content">Images</a>
+             <i class="fa-solid fa-flask top-content"></i>
+        <i class="fa-solid fa-bars top-content"></i>
+        <i class="fa-solid fa-user top-content"></i>
+    </div>
+    <div id="center">
+            <h1>Google</h1>
+           <input type="text" placeholder="Search the Web">
+           <i class="fa-solid fa-magnifying-glass search-icon"></i>
+           <i class="fa-solid fa-microphone mic-icon "></i>
+           <i class="fa-solid fa-camera camera-icon"></i>
+           <div id="bgshort"><div id="shortcut"><i class="fa-solid fa-plus plus"></i></div></div>
+    </div>
+    <div id="bottom">
+        <p id="lipara"><i class="fa-solid fa-link link"></i> Photo by NASA Image Library</p>
+        <p id="pen"><i class="fa-solid fa-pen"></i></p>
+            
+
+
+    </div>
+
+</body>
+</html>

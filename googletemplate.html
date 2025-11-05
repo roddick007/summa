@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+        body{
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/009/302/810/small_2x/beautiful-forest-panoramic-realistic-wanderlust-background-landscape-dark-trees-pine-in-mist-design-mystery-fog-in-park-concept-nature-beauty-tourism-web-banner-free-vector.jpg);
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+        }
+        #top{
+             display: flex;
+             justify-content: flex-end;
+             padding: 10px;
+             flex-wrap: wrap;
+             a,i{
+                color: white;
+                text-decoration: none;
+                margin-right: 10px;
+               }
+               a{
+                font-family: sans-serif;
+               }
+                a:hover{
+                  text-decoration: underline;
+                }
+        }
+        #center{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          height: 500px;
+          h1{
+            font-size: 100px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 40px;
+          }
+          
+          #searchbar{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+          }
+          input{
+            
+                width: 700px;
+                height: 40px;
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                border-left: 0;
+                border-right: 0;
+                display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+                
+                
+        }
+        input:focus{
+          outline: none;
+         
+        }
+        #seic,#mic,#camic{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          padding: 9.5px;
+          border-width: 3px;
+          border-style: solid;
+          border-color: black;
+          background-color: white;
+        }
+        #seic{
+          border-right: 0;
+          border-top-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+        }
+        #mic{
+          border-left: 0;
+          border-right: 0;
+        }
+        #camic{
+          border-left: 0;
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+        }
+       
+       }
+        #addshort{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+         #bgshort{ 
+            width: 100px;
+            height: 100px;
+            position: relative;
+            border-radius: 10px;
+            background-color: transparent;
+            backdrop-filter: blur(50px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 25px;
+        #shortcut{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: goldenrod;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+           
+            .plus{
+                font-size: 35px;
+                
+            }
+
+        }
+        }
+        }
+       #bottom{   
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        color: white;
+        #leftside,#rightside{
+          height: 200px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: 10px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 14px;
+        }
+        a:hover{
+          text-decoration: underline;
+        }
+        
+        
+       }
+        
+
+    </style>
+</head>
+<body>
+    <div id="top">
+            <a href="" class="top-content">Google</a>
+            <a href="" class="top-content">Images</a>
+             <i class="fa-solid fa-flask top-content"></i>
+        <i class="fa-solid fa-bars top-content"></i>
+        <i class="fa-solid fa-user top-content"></i>
+    </div>
+    <div id="center">
+            <h1>Google</h1>
+            <div id="searchbar">
+              <div id="seic"><i class="fa-solid fa-magnifying-glass search-icon"></i></div>
+           <div class="ca"><input type="text" placeholder="Search the Web"></div>
+           
+          <div id="mic"> <i class="fa-solid fa-microphone mic-icon "></i></div>
+           <div id="camic"><i class="fa-solid fa-camera camera-icon"></i></div>
+           
+           
+           </div>
+           <div id="addshort">
+           <div id="bgshort"><div id="shortcut"><i class="fa-solid fa-plus plus"></i></div></div></div>
+           
+    </div>
+    <div id="bottom">
+      <div id="leftside">
+        <a href=""><p id="lipara"><i class="fa-solid fa-link link"></i></a> Photo by NASA Image Library</p></div>
+        <div id="rightside">
+        <p id="pen"><i class="fa-solid fa-pen"></i></p></div>
+            
+
+
+    </div>
+
+</body>
+</html>

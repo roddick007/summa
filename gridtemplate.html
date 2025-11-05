@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #grid{
+            display: grid;
+            margin: 50px;
+            grid-template-areas: 'twfive twfive twfive twfive''clear clear minus add''seven eigth nine div''four five six mul''one two three equal''zero zero dot equal';
+            justify-content: center;
+            
+            
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: lightcoral;
+                padding: 20px;
+                margin: 5px;
+                font-size: 20px;
+               
+            }
+         
+       }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div style="grid-area: twfive;background-color:orange;">25</div>
+        <div style="grid-area: clear; background-color: aqua;">clear</div>
+        <div style="grid-area: one;">1</div>
+        <div style="grid-area: two;">2</div>
+        <div style="grid-area: three;">3</div>
+        <div style="grid-area: four;">4</div>
+        <div style="grid-area: five;">5</div>
+        <div style="grid-area: six;">6</div>
+        <div style="grid-area: seven;">7</div>
+        <div style="grid-area: eigth;">8</div>
+        <div style="grid-area: nine;">9</div>
+        <div style="grid-area: zero;">0</div>
+        <div style="grid-area: add;">+</div>
+        <div style="grid-area: minus;">-</div>
+        <div style="grid-area: div;">/</div>
+        <div style="grid-area: mul;">X</div>
+        <div id="qwe" style="grid-area: equal;background-color: red;">=</div>
+        <div style="grid-area: dot;">.</div>
+    </div>
+</body>
+</html>

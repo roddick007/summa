@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Creative Pricing Table</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f7a88e 0%, #d17dbf 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+  }
+
+  h1 {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 28px;
+    user-select: none;
+  }
+
+  .pricing-table {
+    display: flex;
+    gap: 30px;
+    max-width: 960px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 0.15);
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+    position: relative;
+  }
+
+  .card:hover {
+    box-shadow: 0 20px 40px rgb(0 0 0 / 0.3);
+  }
+
+  .card .top {
+    padding: 40px 20px 60px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    user-select: none;
+  }
+
+  .card .price {
+    font-size: 32px;
+    margin-bottom: 6px;
+    font-weight: 700;
+  }
+
+  .card .per-month {
+    font-weight: 400;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .card .bottom {
+    flex-grow: 1;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    user-select: none;
+  }
+
+  .card.basic .bottom {
+    background: linear-gradient(180deg, #a0d468 0%, #5cb85c 100%);
+  }
+
+  .card.premium .bottom {
+    background: linear-gradient(180deg, #a64dff 0%, #6a00ff 100%);
+  }
+
+  .card.ultimate .bottom {
+    background: linear-gradient(180deg, #ff6b6b 0%, #ff3b3b 100%);
+  }
+
+  .card .bottom ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .card .bottom ul li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card .bottom ul li svg {
+    width: 16px;
+    height: 16px;
+    fill: white;
+    flex-shrink: 0;
+  }
+
+  .card .choose-btn {
+    margin-top: 20px;
+    background: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 0.15);
+    transition: background 0.3s ease, color 0.3s ease;
+    user-select: none;
+  }
+
+  .card .choose-btn:hover {
+    background: #eee;
+  }
+</style>
+</head>
+<body>
+  <h1>Creative Pricing Table</h1>
+  <div class="pricing-table">
+    <div class="card basic">
+      <div class="top">
+        <div class="price" style="color:#3ac569;">$26</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="bottom">
+        <strong>BASIC</strong>
+        <ul>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Lorem ipsum dolor sit amet
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Proin euismod magna nec dolor
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Lorem ipsum dolor sit amet
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Morbi vel tellus a lectus
+          </li>
+        </ul>
+        <button class="choose-btn">CHOOSE</button>
+      </div>
+    </div>
+
+    <div class="card premium">
+      <div class="top">
+        <div class="price" style="color:#4a0ca1;">$30</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="bottom">
+        <strong>PREMIUM</strong>
+        <ul>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Lorem ipsum dolor sit amet
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Proin euismod magna nec dolor
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Lorem ipsum dolor sit amet
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Morbi vel tellus a lectus
+          </li>
+        </ul>
+        <button class="choose-btn">CHOOSE</button>
+      </div>
+    </div>
+
+    <div class="card ultimate">
+      <div class="top">
+        <div class="price" style="color:#f25f5c;">$35</div>
+        <div class="per-month">per month</div>
+      </div>
+      <div class="bottom">
+        <strong>ULTIMATE</strong>
+        <ul>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Lorem ipsum dolor sit amet
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Proin euismod magna nec dolor
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Lorem ipsum dolor sit amet
+          </li>
+          <li>
+            <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10.8L3.6 8.4L2.8 9.2L6 12.4L14 4.4L13.2 3.6L6 10.8Z" fill="white"/></svg>
+            Morbi vel tellus a lectus
+          </li>
+        </ul>
+        <button class="choose-btn">CHOOSE</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

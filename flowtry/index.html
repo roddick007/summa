@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* background animation for the entire page */
+    body {
+      -webkit-animation: bg-change-2x 3s linear infinite alternate both;
+      animation: bg-change-2x 3s linear infinite alternate both;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @-webkit-keyframes bg-change-2x {
+      0% { background-color: purple; color: yellow; }
+      100% { background-color: blue; color: white; }
+    }
+
+    @keyframes bg-change-2x {
+      0% { background-color: purple; color: yellow; }
+      100% { background-color: blue; color: white; }
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: inline-block;
+      margin: 100px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 5px;
+      color: inherit;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h2>What Would you like to Choose</h2>
+  
+  <ul>
+    <li><a href="music.html">Music</a></li> 
+    <li><a href="movies.html">Movies</a></li>
+  </ul>
+</body>
+</html>

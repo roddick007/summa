@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Workshop Registration</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 20px;
+  }
+  table {
+    width: 700px;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+  }
+  .header {
+    background-color: #a9c5b5;
+    color: #000;
+    font-weight: bold;
+    padding: 8px 10px;
+    border: 1px solid #7a9a8a;
+  }
+  .header .title {
+    float: left;
+  }
+  .header .actions {
+    float: right;
+    font-weight: normal;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .subheader {
+    font-weight: bold;
+    padding: 6px 10px;
+    color: #000;
+    text-decoration: underline;
+  }
+  td {
+    padding: 6px 10px;
+    vertical-align: top;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 200px;
+    padding: 3px 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+  }
+  textarea {
+    width: 200px;
+    height: 80px;
+    resize: none;
+  }
+  select {
+    width: 210px;
+  }
+  .checkbox-group label {
+    font-weight: normal;
+    margin-left: 4px;
+    margin-right: 12px;
+  }
+  .footer {
+    background-color: #a9c5b5;
+    padding: 8px 10px;
+    border: 1px solid #7a9a8a;
+    text-align: center;
+  }
+  input[type="submit"],
+  input[type="reset"] {
+    background-color: #7a9a8a;
+    border: none;
+    color: white;
+    padding: 6px 20px;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+  }
+  input[type="submit"]:hover,
+  input[type="reset"]:hover {
+    background-color: #5f7a6a;
+  }
+  a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #000;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="4" class="header">
+          <div class="title">Workshop Registration</div>
+          <div class="actions">More Actions &#9660;</div>
+        </th>
+      </tr>
+      <tr>
+        <th colspan="4" style="text-align:left; padding: 6px 10px;">
+          <a href="#">Register now while seats are available!</a>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><label for="fname">First Name <span style="color:red">*</span></label></td>
+        <td><input type="text" id="fname" name="fname" /></td>
+        <td><strong>Lunch</strong></td>
+        <td>
+          <label for="meal">Meal Preference</label>
+          <select id="meal" name="meal">
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+            <option>Vegan</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="lname">Last Name <span style="color:red">*</span></label></td>
+        <td><input type="text" id="lname" name="lname" /></td>
+        <td><a href="#" style="font-weight: normal; text-decoration: underline;">Payment Details</a></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label for="company">Company/Institution <span style="color:red">*</span></label></td>
+        <td><input type="text" id="company" name="company" /></td>
+        <td><label>Payment Mode</label></td>
+        <td class="checkbox-group">
+          <input type="checkbox" id="cash" name="paymentmode" value="cash" />
+          <label for="cash">Cash</label>
+          <input type="checkbox" id="cheque" name="paymentmode" value="cheque" />
+          <label for="cheque">Cheque</label>
+          <input type="checkbox" id="demanddraft" name="paymentmode" value="demanddraft" />
+          <label for="demanddraft">Demand Draft</label>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="address">Address <span style="color:red">*</span></label></td>
+        <td><textarea id="address" name="address"></textarea></td>
+        <td><label for="ddno">DD/Cheque No.</label></td>
+        <td><input type="text" id="ddno" name="ddno" /></td>
+      </tr>
+      <tr>
+        <td><label for="city">City</label></td>
+        <td><input type="text" id="city" name="city" /></td>
+        <td><label for="drawnon">Drawn On (Bank Name)</label></td>
+        <td><input type="text" id="drawnon" name="drawnon" /></td>
+      </tr>
+      <tr>
+        <td><label for="state">State / Province / Region</label></td>
+        <td>
+          <select id="state" name="state">
+            <option value="">-Select-</option>
+            <option>State 1</option>
+            <option>State 2</option>
+            <option>State 3</option>
+          </select>
+        </td>
+        <td><label for="payableat">Payable at</label></td>
+        <td><input type="text" id="payableat" name="payableat" /></td>
+      </tr>
+      <tr>
+        <td><label for="country">Country</label></td>
+        <td>
+          <select id="country" name="country">
+            <option value="">-Select-</option>
+            <option>Country 1</option>
+            <option>Country 2</option>
+            <option>Country 3</option>
+          </select>
+        </td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label for="email">Email <span style="color:red">*</span></label></td>
+        <td><input type="email" id="email" name="email" /></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label for="phone">Phone Number <span style="color:red">*</span></label></td>
+        <td><input type="text" id="phone" name="phone" /></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4" class="footer">
+          <input type="submit" value="Submit" />
+          <input type="reset" value="Reset" />
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

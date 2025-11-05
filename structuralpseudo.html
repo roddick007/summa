@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent>h1:first-child{
+            color: aqua;
+            background-color: black;
+        }
+        #parent>h1:last-child{
+            color: red;
+            background-color: brown;
+        }
+        #nth>:nth-child(3){
+            color: bisque;
+            background-color: yellow;
+        }
+        #nth>{
+            color: brown;
+            background-color: violet;
+        }
+        #nth>h1:last-of-type{
+            color: red;
+            background-color: purple;
+        }
+        #nth>h1:first-of-type{
+            color: red;
+            background-color: purple;
+        }
+        #parent>h1:nth-last-child(3){
+            color: black;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <h1>raja</h1>
+        <h1>veena</h1>
+        <h1>teena</h1>
+        <h1>poem</h1>
+        <h1>ricky</h1>
+        <h1>monkey</h1>
+        <h1>polo</h1>
+        <h1>t shirt</h1>
+    </div>
+
+    <div id="nth">
+        <h1>knfklsjidfs</h1>
+        <h3>roddi</h3>
+        <p>bevan</p>
+        <h1>abiii</h1>
+        <h3>ipl</h3>
+        <h4>cricket</h4>
+    </div>
+    
+</body>
+</html>
