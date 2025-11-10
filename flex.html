@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            width: 600px;
+            height: 600px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-flow: row wrap;
+            
+        }
+        .cls{
+            height: 80px;
+            width: 80px;
+            border: 2px solid black;
+            
+        }
+        #child1{
+            background-color: red;
+           flex-shrink: 20;
+            
+        }
+        #child2{
+            background-color: blue;
+           flex-shrink: 900;
+            
+        }
+        #child3{
+            background-color: black;
+            
+            flex-shrink: 150;
+
+        }
+        #child4{
+            background-color: palegoldenrod;
+            order: 4;
+            flex-shrink: 100;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child1" class="cls"></div>
+        <div id="child2" class="cls"></div>
+        <div id="child3" class="cls"></div>
+        <div id="child4" class="cls"></div>
+        
+    </div>
+</body>
+</html>
